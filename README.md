@@ -83,6 +83,7 @@ model.compile(
     loss='sparse_categorical_crossentropy',
     metrics=['accuracy']
 )
+---
 ## ✅ 9. Model Training:
 
 Model trained for **15 epochs** using the prepared **training** and **validation datasets**.
@@ -93,6 +94,7 @@ history = model.fit(
     validation_data=val_ds,
     epochs=15
 )
+---
 ## ✅ 10. Performance Evaluation:
 Evaluated the final model on the Test Set (60 images).
 
@@ -102,7 +104,7 @@ Edit
 test_loss, test_accuracy = model.evaluate(test_ds)
 print(f"Test Accuracy: {test_accuracy}")
 print(f"Test Loss: {test_loss}")
-
+---
 ##✅ 11. Model Saving:
 Saved the trained model for later deployment (planned for Week 3: Gradio Web App).
 
@@ -110,3 +112,4 @@ python
 Copy
 Edit
 model.save("Effiicientnetv2b2.keras")
+---
