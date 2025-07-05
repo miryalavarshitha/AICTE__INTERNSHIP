@@ -1,5 +1,10 @@
 # AICTE__INTERNSHIP
-# Garbage_classification
+# Garbage_classification using Deep Learning
+🚀 **Live Demo:** [Garbage Classification App on Hugging Face Spaces](https://huggingface.co/spaces/miryalavarshitha/garbageclassification_app)
+
+This project aims to classify images of garbage into six categories using a Convolutional Neural Network (CNN) built on EfficientNetV2B2. The workflow covers everything from dataset extraction to model deployment.
+
+---
 #WEEK-1
 1.**Dataset Extraction:** The dataset (garbage_dataset.zip) is unzipped into the /garbage_dataset directory using Python's zipfile module.
 
@@ -70,51 +75,38 @@
 
 ---
 
-## ✅ 8. Model Compilation:
+## 8. Model Compilation
 
-- **Optimizer:** Adam  
-- **Loss Function:** Sparse Categorical Crossentropy  
-- **Metric:** Accuracy  
+- **Optimizer:** Adam
+- **Loss Function:** Sparse Categorical Crossentropy
+- **Metrics:** Accuracy
 
-```python
-model.compile(
-    optimizer='adam',
-    loss='sparse_categorical_crossentropy',
-    metrics=['accuracy']
-)```
----
+  ```python
+  model.compile(
+      optimizer='adam',
+      loss='sparse_categorical_crossentropy',
+      metrics=['accuracy']
+  )
+  ```
 
+## 9. Model Training
 
-## ✅ 9. Model Training:
+- Train the model on the training set.
+- Use the validation set for monitoring overfitting and model selection.
 
-Model trained for **15 epochs** using the prepared **training** and **validation datasets**.
+## 10. Model Evaluation
 
-```python
-history = model.fit(
-    train_ds,
-    validation_data=val_ds,
-    epochs=15
-)
----
+- The model achieves an accuracy of **93%** on the test set.
+- Evaluate model performance on the test set using accuracy and loss metrics.
+- Optionally, visualize confusion matrix and classification report for detailed analysis.
 
+## 11. Model Deployment
 
-## ✅ 10. Performance Evaluation:
-Evaluated the final model on the Test Set (60 images).
+- **Export the model** using TensorFlow's `model.save()` or `tf.saved_model.save`.
+- **Deployment Options:**
+  - Deploy as a REST API using FastAPI or Flask.
+  - Use TensorFlow Lite for mobile/edge deployment.
+  - Integrate with web apps via TensorFlow.js.
+- **Live App:** [Garbage Classification App](https://huggingface.co/spaces/miryalavarshitha/garbageclassification_app)
 
-python
-Copy
-Edit
-test_loss, test_accuracy = model.evaluate(test_ds)
-print(f"Test Accuracy: {test_accuracy}")
-print(f"Test Loss: {test_loss}")
----
-
-
-##✅ 11. Model Saving:
-Saved the trained model for later deployment (planned for Week 3: Gradio Web App).
-
-python
-Copy
-Edit
-model.save("Effiicientnetv2b2.keras")
 ---
