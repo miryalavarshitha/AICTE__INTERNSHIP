@@ -98,11 +98,8 @@ This project aims to classify images of garbage into six categories using a Conv
 
 ### 11. Model Deployment
 
-- **Export the model** using TensorFlow's `model.save()` or `tf.saved_model.save`.
-- **Deployment Options:**
-  - Deploy as a REST API using FastAPI or Flask.
-  - Use TensorFlow Lite for mobile/edge deployment.
-  - Integrate with web apps via TensorFlow.js.
+- **The trained model is deployed using Gradio as an interactive web app.**
 - **Live App:** [Garbage Classification App](https://huggingface.co/spaces/miryalavarshitha/garbageclassification_app)
 
 ---
+
