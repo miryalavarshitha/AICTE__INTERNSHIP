@@ -31,7 +31,6 @@
 #WEEK-2
 
 ---
-
 ## ✅ 5. Visualizing Sample Images:
 
 - Displayed a batch of **12 sample images from the training dataset**.
