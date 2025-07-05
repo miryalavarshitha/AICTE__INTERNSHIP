@@ -6,6 +6,7 @@ This project aims to classify images of garbage into six categories using a Conv
 
 ---
 #WEEK-1
+
 1.**Dataset Extraction:** The dataset (garbage_dataset.zip) is unzipped into the /garbage_dataset directory using Python's zipfile module.
 
 2.**Image Dataset Loading:** The dataset is loaded from /garbage_dataset/archive/TrashType_Image_Dataset using TensorFlow’s image_dataset_from_directory:
@@ -36,7 +37,7 @@ This project aims to classify images of garbage into six categories using a Conv
 #WEEK-2
 
 ---
-## ✅ 5. Visualizing Sample Images:
+## 5. Visualizing Sample Images:
 
 - Displayed a batch of **12 sample images from the training dataset**.
 - Plotted using **matplotlib (4×3 grid)**.
@@ -44,7 +45,7 @@ This project aims to classify images of garbage into six categories using a Conv
 
 ---
 
-## ✅ 6. Data Preprocessing and Normalization:
+## 6. Data Preprocessing and Normalization:
 
 - **Pixel Scaling:**  
   All image pixel values normalized from **[0, 255] to [0, 1]**.
@@ -57,7 +58,7 @@ This project aims to classify images of garbage into six categories using a Conv
 
 ---
 
-## ✅ 7. Model Building – CNN using EfficientNetV2B2:
+## 7. Model Building – CNN using EfficientNetV2B2:
 
 - Utilized **EfficientNetV2B2** from TensorFlow Keras Applications.
 
