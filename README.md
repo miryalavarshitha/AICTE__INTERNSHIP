@@ -96,7 +96,15 @@ This project aims to classify images of garbage into six categories using a Conv
 - Model performance is evaluated on the test set using accuracy and loss metrics.
 - Optionally, confusion matrix and classification report are visualized for detailed analysis.
 
-### 11. Model Deployment
+### 11. AI Chatbot Integration – Jarvis 🤖
+
+To enhance user experience and provide real-time assistance, an AI Chatbot named Jarvis is integrated into the web application.
+Jarvis helps users by:
+  -Explaining the project workflow and purpose.
+  -Answering frequently asked questions related to the model, accuracy, and applications.
+  -Jarvis is designed to provide an interactive, WhatsApp-style chat interface, making the app both informative and engaging.
+
+### 12. Model Deployment
 
 - **The trained model is deployed using Gradio as an interactive web app.**
 - **Live App:** [Garbage Classification App](https://huggingface.co/spaces/miryalavarshitha/garbageclassification_app)
