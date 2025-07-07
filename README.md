@@ -1,4 +1,4 @@
-# Garbage Classification using Deep Learning
+# Garbage Classification using EfficientNetV2B2 with Integrated AI Chatbot
 
 🚀 **Live Demo:** [Garbage Classification App on Hugging Face Spaces](https://huggingface.co/spaces/miryalavarshitha/garbageclassification_app)
 
